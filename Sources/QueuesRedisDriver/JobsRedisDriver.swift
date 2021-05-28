@@ -148,7 +148,7 @@ enum _QueuesRedisError: Error {
 
 extension JobIdentifier {
     var key: String {
-        "job:\(self.string)"
+        "{job}:\(self.string)"
     }
 }
 
